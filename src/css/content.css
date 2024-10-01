@@ -1,0 +1,59 @@
+.content{
+    grid-area: content;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+
+}
+
+@media (max-widht: 600px) {
+    .content{
+        grid-template-columns: auto;
+
+    }
+}
+
+.col-wide{
+    grid-column: 1 / -1;
+
+}
+
+.imagem-1 {
+    grid-row: span 2;
+    align-self: end;
+}
+
+p{
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: -0.005em;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.infromacoes p + p {
+    margin-top: 30px;
+}
+
+.titulo {
+    color: #b07dfb;
+
+}
+
+.titulo h1{
+    font-size: 3.75em;
+    line-height: 1;
+    font-weight: 700;
+}
+.titulo span{
+    font-size: 0.875;
+    font-style: italic;
+
+}
+.caracteristicas{
+    display: flex;
+    align-items: flex-start;
+}
